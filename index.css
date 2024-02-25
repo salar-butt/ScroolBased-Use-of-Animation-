@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+}
+
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(10, 240, 190);
+    width: 100%;
+    transform: scale(0.1);
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to {
+        transform: scale(1.1);
+    }   
+}
+
+.div {
+    position: relative;
+    height: 60vh;
+    width: 70vw;
+    margin: auto;
+    margin-top: 100px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+.slide {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.slide:hover {
+    transition: 1s;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav > button {
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 0px 0px 10px 1px gray;
+    background-image: linear-gradient(to right top, rgb(100, 237, 247), gray);
+}
+
+button:hover {
+    cursor: pointer;
+}
+.divo{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+img{
+    height: 50vh;
+    width: 70vw;
+    margin: auto;
+}
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
